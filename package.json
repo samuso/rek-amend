@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node server.js"
   },
   "dependencies": {
     "body-parser": "~1.10.2",
@@ -12,6 +12,7 @@
     "express": "~4.11.1",
     "express-handlebars": "^3.0.0",
     "havenondemand": "^1.1.0",
+    "mongoose": "^4.3.7",
     "morgan": "~1.5.1",
     "request": "^2.69.0",
     "serve-favicon": "~2.2.0"

@@ -36,6 +36,8 @@ router.get('/home', function(req, res) {
 * */
 router.post('/users', function(req, res) {
     res.render('users', { title: 'users'});
+    console.log("this is :");
+    console.log(req.body.query);
 });
 
 /*

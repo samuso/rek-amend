@@ -47,7 +47,7 @@ html
 											.caption
 												h4(style='margin-bottom: 24px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;') #{movie.name}
 												h5 Attributes
-												p #{movie.profiles}
+												p(style='word-wrap: break-word;overflow: auto') #{movie.profiles}
 												.row
 													.col-xs-6
 														form.text-center(action='/like?movie=#{movie.id}&user=#{user}' method='post')

@@ -150,7 +150,7 @@ app.route('/').get(function(arg, res, next) {
   })(this));
 });
 
-app.listen((port = 5000), function(err) {
+app.listen((port = 3000), function(err) {
   if (err != null) {
     throw err;
   }

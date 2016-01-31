@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var request = require('request');
+var User = require('../models/User');
 var havenondemand = require('havenondemand');
 var hodClient = new havenondemand.HODClient('c643526f-4611-49da-a4bd-05a4d5690336', 'v1');
 
@@ -56,19 +57,32 @@ router.get('/submit', function(req, res) {
 
 
 /*
- *
+ * Grab description, send to API, once it receives back from API populate the database...
  * */
 router.post('/submit', function(req, res) {
-    /*
-    * Grab description, send to API, once it receives back from API populate the database...
-    * */
-    res.render('submit',{title: 'submit'});
+
+    var data = {text: req.body.about };
+    hodClient.call('extractconcepts', data, function(err, hodRes, hodBody){
+
+        var newUser = new User({
+            username : req.body.username,
+            name: req.body.name,
+            about: req.body.about,
+            profile: hodBody.concepts
+        });
+
+        newUser.save(function(err){
+            if (err) console.log(err);
+            res.redirect('/user/' + newUser.username);
+        });
+    });
 });
 
 /*
  *
  * */
 router.get('/user/:id', function(req, res) {
+    /* look for user with given id, if not found display error or something like that! */
     res.render('profile', {title: 'profile'});
 });
 

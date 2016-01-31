@@ -2,11 +2,10 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var User = new Schema({
-    _id:{type: String, unique:true},
     username: {type: String, unique: true},
     name: {type:String},
     about: {},
-    profile:{type:[String]}
+    profile:{type:[{concept: String, occurrences: Number}]}
 });
 
-module.exports = mongoose.model('test', User);
+module.exports = mongoose.model('user', User);

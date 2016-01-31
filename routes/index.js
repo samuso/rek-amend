@@ -81,10 +81,18 @@ router.post('/submit', function(req, res) {
 /*
  *
  * */
-router.get('/user/:id', function(req, res) {
-    /* look for user with given id, if not found display error or something like that! */
-    res.render('profile', {title: 'profile'});
+router.get('/user/:username', function(req, res) {
+  User.findOne({'username' : req.params.username}, function(err, data){
+    if (err) console.log(err);
+    var concepts = [];
+    for (var i = 0; i < data.profile.length && i < 10; i++)
+    {
+      concepts.push(data.profile[i]['concept']);
+    }
+    res.render('profile', {title: concepts});
+  });
 });
+
 
 /*
 * Routes:

@@ -13,7 +13,7 @@
 		"thumb": {
 			"url": "https://cdn.tutsplus.com/photo/uploads/legacy/613_maleportraits/21.jpg"
 		},
-		"profiles" :["Page", "Developed", "Chemistry B Biology B", "July", "Science","Chatham","Pharmacy","Sept","Disease Drug Action Advanced Therapeutics Practitioner","Drug Action Advanced Therapeutics Practitioner Patient"]
+		"profiles" :["Page", "Developed", "July", "Science","Chatham","Pharmacy","Sept","Disease Drug Action Advanced Therapeutics Practitioner"]
 	},
 	{
 		"id": "3",
@@ -29,7 +29,7 @@
 		"thumb": {
 			"url": "http://www.bloggs74.com/wp-content/uploads/01-male-portrait.jpg"
 		},
-		"profiles" :["farmer",  "Chemistry B Biology B", "July", "Science","Chatham", "animals", "Daisy", "everyone", "milk", "becoming","being"]
+		"profiles" :["farmer",  "Chemistry B Biology B", "July", "Science", "animals", "Daisy",  "milk"]
 	},
 	{
 		"id": "5",
@@ -45,7 +45,7 @@
 		"thumb": {
 			"url": "http://www.ovidiutudorache.com/UsersGenerator/Content/randomdata/male/6.jpg"
 		},
-		"profiles" :["drawing","through","always","time","work","ideas","skills","something","create","make"]
+		"profiles" :["drawing","time","work","ideas","skills","create","make"]
 	},
 	{
 		"id": "7",
@@ -101,7 +101,7 @@
 		"thumb": {
 			"url": "http://wendy-photography.com/wp-content/uploads/2013/03/NJ-portrait-photographer-female-f.jpg"
 		},
-		"profiles" :["Cajal","Neuroscience","brain","Schizophrenia","Parkinson","Although Neuroscience","Tale Brain","Oliver Sacks","Santiago Ramon","s"]
+		"profiles" :["Cajal","Neuroscience","brain","Schizophrenia","Parkinson", "Neuroscience","Tale Brain","Santiago Ramon"]
 	},
 	{
 		"id": "14",
@@ -134,7 +134,7 @@
 		"thumb": {
 			"url": "http://www.pxleyes.com/images/users/k/kphinney/1568/fullsize/4b9468970b47f.jpg"
 		},
-		"profiles" :["engineering","mechanical engineers","During","North Tyneside General Hospital","Fabricom Offshore Services","Chemistry","Ltd","Maths","Newcastle","real"]
+		"profiles" :["engineering","mechanical engineers","North Tyneside General Hospital","Fabricom Offshore Services","Chemistry","Ltd","Maths","Newcastle"]
 	},
 	{
 		"id": "18",
@@ -150,7 +150,7 @@
 		"thumb": {
 			"url": "http://img14.deviantart.net/e4e8/i/2015/126/1/e/nightingale__portrait_4_by_faestock-d8scsoq.jpg"
 		},
-		"profiles" :["Secondary School", "Royal Worchester Spode","English","Level", "University","work","Year","Sales Advisor","English Prefect","interest"]
+		"profiles" :["English","Level", "University","Year","Sales Advisor","English Prefect","interest"]
 	},
 	{
 		"id": "20",

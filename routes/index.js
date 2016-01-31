@@ -84,11 +84,10 @@ router.post('/submit', function(req, res) {
 router.get('/user/:username', function(req, res) {
   User.findOne({'username' : req.params.username}, function(err, data){
     if (err) console.log(err);
-    var concepts = [];
-    for (var i = 0; i < data.profile.length && i < 10; i++)
-    {
-      concepts.push(data.profile[i]['concept']);
-    }
+
+    var concepts = data.profile.map(function(profile){return profile['concept'];});
+    concepts.length = 10 < concepts.length ? 10 : concepts.length;
+
     res.render('profile', {title: concepts});
   });
 });

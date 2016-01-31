@@ -34,7 +34,7 @@ html
 							.pull-right
 								form(action='/refresh?user=#{user}' method='post')
 									button.btn.btn-primary Refresh
-							| Recommended Friends
+							| Recommended User
 						if suggestions.length == 0
 							.alert.alert-success Like/dislike a few users below to generate some recommendations
 
@@ -61,7 +61,7 @@ html
 
 						.row
 							.col-xs-12
-								h2 All Movies
+								h2 All Users
 								for movie, i in movies
 									if i%4 == 0
 										.row
@@ -95,4 +95,3 @@ html
 																		form.text-center(action='/dislike?movie=#{movie.id}&user=#{user}' method='post')
 																			button.btn.btn-default
 																				span.glyphicon.glyphicon-thumbs-down
-e

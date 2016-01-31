@@ -150,7 +150,7 @@ app.route('/').get(function(arg, res, next) {
   })(this));
 });
 
-var port_number = server.listen(process.env.PORT || 3000);
+var port_number = (process.env.PORT || 3000);
 
 app.listen(port_number, function(err) {
   if (err != null) {
